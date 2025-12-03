@@ -1,0 +1,83 @@
+:root {
+    --azul: #a8d8ff;
+    --azul-dark: #7bc5ff;
+    --verde: #b8f5c1;
+    --verde-dark: #91eaa1;
+    --texto: #0f2a2e;
+    --blanco: #ffffff;
+    }
+    
+    body {
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, var(--azul), var(--verde));
+    color: var(--texto);
+    }
+    
+    .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    }
+    
+    h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--texto);
+    }
+    
+    .banner {
+    background: var(--blanco);
+    padding: 12px 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+    text-align: center;
+    }
+    
+    .grid-actividades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    }
+    
+    .card-actividad {
+    display: block;
+    text-decoration: none;
+    background: var(--blanco);
+    padding: 20px;
+    border-radius: 16px;
+    color: var(--texto);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-left: 6px solid var(--azul-dark);
+    }
+    
+    .card-actividad:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    
+    .card-actividad h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    color: var(--azul-dark);
+    }
+    
+    .card-actividad p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #2b4b52;
+    }
+    
+    /* Actividad especial */
+    .act14 {
+    border-left-color: var(--verde-dark);
+    }
+    
+    .act14 h3 {
+    color: var(--verde-dark);
+    }
+    
